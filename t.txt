@@ -1,8 +1,21 @@
-Mobile shop
+Mobile shop -- Nova
+
+Main --> page with welcome with buttons 
+Mobile section --> page with mobile selection by brand
+Laptop section --> page with
+
+----------------------------------------------------------------
+
+Mobile section:
+Header --> page with main, mobile, Laptop
+--> 
+--> Boxes with picture when hovering add box under it that shows description
+
+----------------------------------------------------------------
+
 Choose by brand name
 --> 
 
-Nova 
+
 Matrix
 3B
-
