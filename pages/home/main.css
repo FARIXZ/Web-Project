@@ -6,14 +6,17 @@
 
 .blur {
   filter: blur(5px); /* Adjust the blur intensity as needed */
-  transition: filter 0.5s ease; /* Add a transition for smooth effect */
+  transition: filter 0.2s ease; /* Add a transition for smooth effect */
 }
 
 body {
   background: linear-gradient(rgb(4, 4, 171), rgb(101, 2, 144)); /*kada ana damagt ban 2 colors 'colors mdarga' */
-  height: 95.2vh;
+  /* height: 95.2vh; */
+  height: 100vh;
   font-family: system-ui;
+  overflow: hidden;
 }
+
 a {
   /* hana kol links bta3at el website*/
   text-decoration: none; /*3a4an a4il el 5at mi ta7t el home,...*/
@@ -68,10 +71,13 @@ header ul li a:hover::after {
   width: 100%;
 }
 
+/* Body */
+
 .header-text {
-  margin-left: 20px;
-  font-size: 35px;
+  font-size: 39px;
   color: white;
+  margin-right: 400px; /* Adjust spacing between text and image */
+  margin-left: 40px;
 }
 .sec-text {
   font-size: 25px;
@@ -79,10 +85,6 @@ header ul li a:hover::after {
 
 .header-container {
   margin-top: 60px;
-  display: flex;
+  display: inline-flex;
   align-items: center; /* Align children vertically */
-}
-
-.header-text {
-  margin-right: 400px; /* Adjust spacing between text and image */
 }
