@@ -1,0 +1,88 @@
+* {
+  /* '*' ma3naha kol 7aga*/
+  margin: 0;
+  padding: 0;
+}
+
+.blur {
+  filter: blur(5px); /* Adjust the blur intensity as needed */
+  transition: filter 0.5s ease; /* Add a transition for smooth effect */
+}
+
+body {
+  background: linear-gradient(rgb(4, 4, 171), rgb(101, 2, 144)); /*kada ana damagt ban 2 colors 'colors mdarga' */
+  height: 95.2vh;
+  font-family: system-ui;
+}
+a {
+  /* hana kol links bta3at el website*/
+  text-decoration: none; /*3a4an a4il el 5at mi ta7t el home,...*/
+  color: white; /*font color*/
+}
+header {
+  display: flex; /*el 5atwa di ht5ali el logo w el navpar ganb ba3d*/
+  justify-content: space-between; /*kada ha5ali el logo 3ala el left w el navpar 3al aksa el right*/
+  align-items: center; /*kada nazalt el logo ta7t 4waia*/
+  margin: 30px; /*kada adathm margin*/
+}
+header .logo {
+  /*edditing la el logo*/
+  font-size: 30px;
+  text-transform: uppercase; /*wa3ni b5at kbir*/
+}
+header ul {
+  display: flex; /*kada 5althom 3ala satr wa7d ganb ba3d*/
+  justify-content: center;
+  align-items: center;
+  list-style: none; /*ana bafsal ban kol element (Li) wakada ana 4alt el blackpoints bta3at el lists*/
+}
+header ul li {
+  margin-right: 30px; /*kada ana adat margin(space) ban el navpar 3ala el right'home,shop,...*/
+}
+
+header ul li a {
+  padding: 6px 15px;
+  color: #fff;
+  position: relative;
+}
+
+header ul li a:hover,
+.active {
+  border-radius: 20px; /*3aa4an 7awaf el border ta5od curve*/
+  background-color: rgb(255, 255, 255); /*lama agi a click 3ala 7aga man el navbar ya3mal white square 3al el kalma*/
+  color: black; /*3a4an ana fo2 m5alia el kalam bal white w hia el square white fa el kalma mo4 htban fa 5altha hana black ma3 el white square*/
+}
+
+header ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #fefefe;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  transition: 0.5s;
+}
+
+header ul li a:hover::after {
+  width: 100%;
+}
+
+.header-text {
+  margin-left: 20px;
+  font-size: 35px;
+  color: white;
+}
+.sec-text {
+  font-size: 25px;
+}
+
+.header-container {
+  margin-top: 60px;
+  display: flex;
+  align-items: center; /* Align children vertically */
+}
+
+.header-text {
+  margin-right: 400px; /* Adjust spacing between text and image */
+}

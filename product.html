@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/pages/product/main.css" />
+    <title>NOVA - Products</title>
+  </head>
+  <body>
+    <header>
+      <h2><a href="#" class="logo">NOVA</a></h2>
+      <ul>
+        <li><a id="home-btn" style="cursor: pointer">Home</a></li>
+        <li><a id="product-btn" style="cursor: pointer" class="active">Product</a></li>
+        <li><a id="about-btn" style="cursor: pointer">About</a></li>
+      </ul>
+    </header>
+    <section class="main">
+      <div class="filter-btns">
+        <button onclick="showAll()">All</button>
+        <button onclick="showSamsung()">Samsung</button>
+        <button onclick="showApple()">Apple</button>
+        <button onclick="showRealme()">Realme</button>
+      </div>
+      <!-- .. -->
+      <div id="allBoxes">
+        <div class="box all samsung">
+          <img src="samsung.jpg" alt="Samsung" />
+          <div class="content">Samsung Phone</div>
+          <div class="menu">Menu content for Samsung</div>
+        </div>
+        <div class="box all samsung">
+          <img src="samsung.jpg" alt="Samsung" />
+          <div class="content">Samsung Tablet</div>
+          <div class="menu">Menu content for Samsung</div>
+        </div>
+        <div class="box all apple">
+          <img src="apple.jpg" alt="Apple" />
+          <div class="content">Apple iPhone</div>
+          <div class="menu">Menu content for Apple</div>
+        </div>
+        <div class="box all apple">
+          <img src="apple.jpg" alt="Apple" />
+          <div class="content">Apple iPad</div>
+          <div class="menu">Menu content for Apple</div>
+        </div>
+        <div class="box all realme">
+          <img src="realme.jpg" alt="Realme" />
+          <div class="content">Realme Phone</div>
+          <div class="menu">Menu content for Realme</div>
+        </div>
+        <div class="box all realme">
+          <img src="realme.jpg" alt="Realme" />
+          <div class="content">Realme Earbuds</div>
+          <div class="menu">Menu content for Realme</div>
+        </div>
+      </div>
+      <!-- ... -->
+      <!-- ... -->
+      <!-- ... -->
+    </section>
+    <script src="/pages/product/main.js"></script>
+    <script src="/pages/global.js"></script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.blur {
+  filter: blur(5px); /* Adjust the blur intensity as needed */
+  transition: filter 0.5s ease; /* Add a transition for smooth effect */
+}
+body {
+  background: linear-gradient(rgb(4, 4, 171), rgb(101, 2, 144));
+  height: 95.2vh;
+  font-family: system-ui;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+}
+
+header {
+  padding: 1px 1%;
+  background-color: rgba(2, 22, 34, 0.1);
+  backdrop-filter: blur(2px);
+  /* margin-right: 5%; */
+}
+
+header .logo {
+  font-size: 30px;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+header ul li {
+  margin-right: 30px;
+}
+
+header ul li a {
+  padding: 6px 15px;
+  color: #fff;
+  position: relative;
+}
+
+header ul li a:hover,
+.active {
+  border-radius: 20px; /*3aa4an 7awaf el border ta5od curve*/
+  background-color: rgb(255, 255, 255); /*lama agi a click 3ala 7aga man el navbar ya3mal white square 3al el kalma*/
+  color: black; /*3a4an ana fo2 m5alia el kalam bal white w hia el square white fa el kalma mo4 htban fa 5altha hana black ma3 el white square*/
+}
+
+header ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #fefefe;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  transition: 0.5s;
+}
+
+header ul li a:hover::after {
+  width: 100%;
+}
+
+/* -----------------  Buttons  --------------- */
+.filter-btns {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.filter-btns button {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 550;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.filter-btns button::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ffffffc7;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+.filter-btns button.active::after {
+  width: 100%;
+}
+
+/* CSS styles to hide boxes by default */
+.hidden {
+  display: none;
+}
+
+/* --------  Boxes ------------- */
+
+#allBoxes {
+  margin-top: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.box {
+  width: 200px;
+  height: 250px;
+  border: none;
+  background-color: white;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.box .content {
+  padding: 10px;
+}
+
+.menu {
+  display: none;
+  top: 0;
+  left: 100%;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  padding: 9px;
+  box-shadow: 2px 2px 5px #0808088f;
+}
+
+.box:hover .menu {
+  display: block;
+  left: 110%;
+}
