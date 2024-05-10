@@ -157,5 +157,4 @@ header ul li a:hover::after {
 
 .box:hover .menu {
   display: block;
-  left: 110%;
 }
