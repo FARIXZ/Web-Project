@@ -10,12 +10,10 @@
 }
 
 body {
-  background: linear-gradient(
-    rgb(4, 4, 171),
-    rgb(101, 2, 144)
-  ); /*kada ana damagt ban 2 colors 'colors mdarga' */
+  background: linear-gradient(rgb(4, 4, 171), rgb(101, 2, 144)); /*kada ana damagt ban 2 colors 'colors mdarga' */
   height: 100vh;
   font-family: system-ui;
+  overflow: hidden;
 }
 
 a {
@@ -23,12 +21,14 @@ a {
   text-decoration: none; /*3a4an a4il el 5at mi ta7t el home,...*/
   color: white; /*font color*/
 }
+
 header {
   display: flex; /*el 5atwa di ht5ali el logo w el navpar ganb ba3d*/
   justify-content: space-between; /*kada ha5ali el logo 3ala el left w el navpar 3al aksa el right*/
   align-items: center; /*kada nazalt el logo ta7t 4waia*/
   margin: 30px; /*kada adathm margin*/
   padding: 20px;
+  font-family: 'Kanit', sans-serif;
 }
 
 header .logo {
@@ -54,11 +54,7 @@ header ul li a {
 header ul li a:hover,
 .active {
   border-radius: 20px; /*3aa4an 7awaf el border ta5od curve*/
-  background-color: rgb(
-    255,
-    255,
-    255
-  ); /*lama agi a click 3ala 7aga man el navbar ya3mal white square 3al el kalma*/
+  background-color: rgb(255, 255, 255); /*lama agi a click 3ala 7aga man el navbar ya3mal white square 3al el kalma*/
   color: black; /*3a4an ana fo2 m5alia el kalam bal white w hia el square white fa el kalma mo4 htban fa 5altha hana black ma3 el white square*/
 }
 
@@ -67,7 +63,7 @@ header ul li a:hover {
 }
 
 header ul li a::after {
-  content: "";
+  content: '';
   width: 0;
   height: 3px;
   background: white;
@@ -81,8 +77,52 @@ header ul li a:hover::after {
   width: 100%;
 }
 
-p,
+p {
+  color: #fff;
+  margin-left: 50px;
+}
+
 h2 {
   color: white;
-  margin-left: 20px;
+  margin-left: 50px;
+}
+
+.txt {
+  margin-top: 60px;
+}
+
+.footer {
+  margin-top: 90px;
+  background-color: rgba(0, 0, 0, 0.678);
+  padding: 20px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+}
+
+.footer-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.footer-icons i {
+  font-size: 20px;
+}
+
+strong {
+  font-family: 'Poetsen One', sans-serif;
+  font-weight: 300;
+}
+
+.txt p {
+  font-family: 'Kanit', sans-serif;
 }
