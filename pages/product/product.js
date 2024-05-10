@@ -23,7 +23,6 @@ function showSamsung() {
   btn.classList.add('active');
 
   var nonSamsungBoxes = document.querySelectorAll('#box:not(.samsung)');
-  console.log(nonSamsungBoxes);
   nonSamsungBoxes.forEach(function (box) {
     box.classList.add('hidden');
   });
@@ -46,6 +45,7 @@ function showRealme() {
   showAll(1);
   var btn = document.querySelector('.filter-btns button:nth-child(4)');
   btn.classList.add('active');
+
   var nonRealmeBoxes = document.querySelectorAll('#box:not(.realme)');
   nonRealmeBoxes.forEach(function (box) {
     box.classList.add('hidden');

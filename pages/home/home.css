@@ -1,5 +1,4 @@
 * {
-  /* '*' ma3naha kol 7aga*/
   margin: 0;
   padding: 0;
 }
@@ -10,23 +9,25 @@
 }
 
 body {
-  background: linear-gradient(rgb(4, 4, 171), rgb(101, 2, 144)); /*kada ana damagt ban 2 colors 'colors mdarga' */
+  background: linear-gradient(rgb(4, 4, 171), rgb(101, 2, 144));
   height: 100vh;
   font-family: system-ui;
   overflow: hidden;
 }
 
 a {
-  /* hana kol links bta3at el website*/
-  text-decoration: none; /*3a4an a4il el 5at mi ta7t el home,...*/
+  /* all links of website*/
+  text-decoration: none; /* no line under the link */
   color: white; /*font color*/
 }
+
 header {
   display: flex; /*el 5atwa di ht5ali el logo w el navpar ganb ba3d*/
   justify-content: space-between; /*kada ha5ali el logo 3ala el left w el navpar 3al aksa el right*/
   align-items: center; /*kada nazalt el logo ta7t 4waia*/
   margin: 30px; /*kada adathm margin*/
 }
+
 header .logo {
   font-size: 30px;
 }
