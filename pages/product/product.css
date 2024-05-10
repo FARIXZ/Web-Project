@@ -11,10 +11,12 @@ body {
   height: 100vh;
   font-family: system-ui;
 }
+
 a {
   text-decoration: none;
   color: white;
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -115,9 +117,9 @@ header ul li a:hover::after {
 /* --------  Boxes ------------- */
 
 #allBoxes {
-  margin-top: 50px;
-  margin-left: 150px;
-  margin-right: 150px;
+  padding: 50px;
+  margin-left: 15%;
+  margin-right: 10%;
 }
 
 .box {
@@ -149,13 +151,7 @@ header ul li a:hover::after {
   display: none;
   position: absolute; /* Change position to absolute */
   top: 0;
-<<<<<<< HEAD
-  left: 100%;
-  background-color: white;
-  border-radius: 5px;
-  padding: 9px;
-  box-shadow: 2px 2px 5px white;
-=======
+
   left: 0;
   width: 100%; /* Make the menu take the full width of the box */
   height: 100%; /* Make the menu take the full height of the box */
@@ -170,7 +166,6 @@ header ul li a:hover::after {
   /* font-weight: 600; */
   font-family: Impact;
   color: rgb(83, 11, 197);
->>>>>>> 713fbfa1763371df19c88255f179213a440716db
 }
 
 .box:hover .menu {

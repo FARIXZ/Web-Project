@@ -1,10 +1,13 @@
-showAll();
+document.addEventListener('DOMContentLoaded', function () {
+  showAll();
+});
 
 function showAll(num) {
   var buttons = document.querySelectorAll('.filter-btns button');
   buttons.forEach(function (btn) {
     btn.classList.remove('active');
   });
+
   var boxes = document.querySelectorAll('.box');
   boxes.forEach(function (box) {
     box.classList.remove('hidden');
@@ -18,7 +21,9 @@ function showSamsung() {
   showAll(1);
   var btn = document.querySelector('.filter-btns button:nth-child(2)');
   btn.classList.add('active');
+
   var nonSamsungBoxes = document.querySelectorAll('.box:not(.samsung)');
+  console.log(nonSamsungBoxes);
   nonSamsungBoxes.forEach(function (box) {
     box.classList.add('hidden');
   });
