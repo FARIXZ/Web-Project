@@ -23,10 +23,14 @@ header {
 }
 
 header {
-  padding: 1px 1%;
-  background-color: rgba(2, 22, 34, 0.1);
-  backdrop-filter: blur(2px);
+  padding: 20px;
+  /* background-color: rgba(2, 22, 34, 0.801);
+  backdrop-filter: blur(2px); */
   /* margin-right: 5%; */
+  /* position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; */
 }
 
 header .logo {

@@ -11,7 +11,6 @@
 
 body {
   background: linear-gradient(rgb(4, 4, 171), rgb(101, 2, 144)); /*kada ana damagt ban 2 colors 'colors mdarga' */
-  /* height: 95.2vh; */
   height: 100vh;
   font-family: system-ui;
   overflow: hidden;
@@ -29,9 +28,7 @@ header {
   margin: 30px; /*kada adathm margin*/
 }
 header .logo {
-  /*edditing la el logo*/
   font-size: 30px;
-  text-transform: uppercase; /*wa3ni b5at kbir*/
 }
 header ul {
   display: flex; /*kada 5althom 3ala satr wa7d ganb ba3d*/
@@ -46,7 +43,7 @@ header ul li {
 header ul li a {
   padding: 6px 15px;
   color: #fff;
-  position: relative;
+  /* position: relative;  makes the line down */
 }
 
 header ul li a:hover,
@@ -56,7 +53,12 @@ header ul li a:hover,
   color: black; /*3a4an ana fo2 m5alia el kalam bal white w hia el square white fa el kalma mo4 htban fa 5altha hana black ma3 el white square*/
 }
 
+header ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.637);
+}
+
 header ul li a::after {
+  /* line */
   content: '';
   width: 0;
   height: 3px;
@@ -87,4 +89,8 @@ header ul li a:hover::after {
   margin-top: 60px;
   display: inline-flex;
   align-items: center; /* Align children vertically */
+}
+
+.header-container img {
+  width: 400px;
 }
