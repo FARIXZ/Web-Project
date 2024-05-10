@@ -122,7 +122,7 @@ header ul li a:hover::after {
   margin-right: 10%;
 }
 
-.box {
+#box {
   width: 200px;
   height: 265px;
   background-color: white;
@@ -135,14 +135,14 @@ header ul li a:hover::after {
   overflow: hidden;
 }
 
-.box img {
+#box img {
   width: 150px;
   margin-top: 5px;
   margin-left: 20px;
   height: auto;
 }
 
-.box .content {
+#box .content {
   padding: 10px;
   margin-top: 10px;
 }
@@ -151,7 +151,6 @@ header ul li a:hover::after {
   display: none;
   position: absolute; /* Change position to absolute */
   top: 0;
-
   left: 0;
   width: 100%; /* Make the menu take the full width of the box */
   height: 100%; /* Make the menu take the full height of the box */
@@ -168,6 +167,6 @@ header ul li a:hover::after {
   color: rgb(83, 11, 197);
 }
 
-.box:hover .menu {
+#box:hover .menu {
   display: block;
 }

@@ -8,7 +8,7 @@ function showAll(num) {
     btn.classList.remove('active');
   });
 
-  var boxes = document.querySelectorAll('.box');
+  var boxes = document.querySelectorAll('#box');
   boxes.forEach(function (box) {
     box.classList.remove('hidden');
   });
@@ -22,7 +22,7 @@ function showSamsung() {
   var btn = document.querySelector('.filter-btns button:nth-child(2)');
   btn.classList.add('active');
 
-  var nonSamsungBoxes = document.querySelectorAll('.box:not(.samsung)');
+  var nonSamsungBoxes = document.querySelectorAll('#box:not(.samsung)');
   console.log(nonSamsungBoxes);
   nonSamsungBoxes.forEach(function (box) {
     box.classList.add('hidden');
@@ -34,7 +34,8 @@ function showApple() {
   showAll(1);
   var btn = document.querySelector('.filter-btns button:nth-child(3)');
   btn.classList.add('active');
-  var nonAppleBoxes = document.querySelectorAll('.box:not(.apple)');
+
+  var nonAppleBoxes = document.querySelectorAll('#box:not(.apple)');
   nonAppleBoxes.forEach(function (box) {
     box.classList.add('hidden');
   });
@@ -45,7 +46,7 @@ function showRealme() {
   showAll(1);
   var btn = document.querySelector('.filter-btns button:nth-child(4)');
   btn.classList.add('active');
-  var nonRealmeBoxes = document.querySelectorAll('.box:not(.realme)');
+  var nonRealmeBoxes = document.querySelectorAll('#box:not(.realme)');
   nonRealmeBoxes.forEach(function (box) {
     box.classList.add('hidden');
   });
