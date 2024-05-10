@@ -70,7 +70,7 @@ header ul li a::after {
   content: "";
   width: 0;
   height: 3px;
-  background: #fefefe;
+  background: white;
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -83,5 +83,6 @@ header ul li a:hover::after {
 
 p,
 h2 {
-  color: #fefefe;
+  color: white;
+  margin-left: 20px;
 }

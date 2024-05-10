@@ -50,7 +50,11 @@ header ul li a {
 header ul li a:hover,
 .active {
   border-radius: 20px; /*3aa4an 7awaf el border ta5od curve*/
-  background-color: rgb(255, 255, 255); /*lama agi a click 3ala 7aga man el navbar ya3mal white square 3al el kalma*/
+  background-color: rgb(
+    255,
+    255,
+    255
+  ); /*lama agi a click 3ala 7aga man el navbar ya3mal white square 3al el kalma*/
   color: black; /*3a4an ana fo2 m5alia el kalam bal white w hia el square white fa el kalma mo4 htban fa 5altha hana black ma3 el white square*/
 }
 
@@ -60,7 +64,7 @@ header ul li a:hover {
 
 header ul li a::after {
   /* line */
-  content: '';
+  content: "";
   width: 0;
   height: 3px;
   background: #fefefe;
